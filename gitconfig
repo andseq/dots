@@ -1,0 +1,16 @@
+[user]
+	name = Anderson Sequera
+	email = andersonsp24@outlook.com
+[alias]
+	ap = add -p .
+	co = checkout
+	ci = commit
+        ci-am = commit --amend
+	st = status
+	br = branch
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+        ds = diff --stat
+        last = --no-pager log -1 HEAD
+        unstage = reset HEAD --
+	branch-squash = reset --soft $(git merge-base main HEAD)
+	branch-unsquash = reset ORIG_HEAD
