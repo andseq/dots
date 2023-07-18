@@ -1,7 +1,6 @@
-local explorer = require("plugins.editor.explorer")
-local telescope = require("plugins.editor.telescope")
-
 return {
-	explorer, -- file explorer
-	telescope -- Telescope
+  require("plugins.editor.explorer"), -- file explorer
+	require("plugins.editor.telescope"), -- Telescope
+  require("plugins.editor.completion"),
+  require("plugins.editor.snippets"),
 }
