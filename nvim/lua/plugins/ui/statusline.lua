@@ -38,4 +38,10 @@ return {
 			extensions = {},
 		}
 	},
+  { -- floating statusline, shows file names at the top-right corner
+    "b0o/incline.nvim",
+    config = function()
+      require("incline").setup()
+    end
+  }
 }

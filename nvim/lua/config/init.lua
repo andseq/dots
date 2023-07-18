@@ -4,7 +4,7 @@ function M.init()
 	require("config.options")
 	require("config.autocmds")
 	require("config.keymaps")
-	require("lazy").setup("plugins")
+	require("config.lazy").init()
 end
 
 return M
